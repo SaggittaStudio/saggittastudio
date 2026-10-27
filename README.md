@@ -1,16 +1,19 @@
-## Hi there 👋
+# Saggitta Studio — NeoCyber Images Edition
 
-<!--
-**SaggittaStudio/saggittastudio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Static single-page client-rendered website for Saggitta Studio. Minimal dark crimson, image-first presentation, no video and no illustrated SVG assets.
 
-Here are some ideas to get you started:
+## Run
+```bash
+npm install
+npm run dev
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Build
+```bash
+npm run build
+```
+
+Webpack source maps disabled (`devtool: false`). Images are local WebP files in `public/media`. Supports Spanish, English, French.
+
+## GitHub Pages
+Push to `main`, then set **Settings → Pages → Build and deployment → GitHub Actions**. Workflow in `.github/workflows/deploy.yml` publishes `dist/`.
